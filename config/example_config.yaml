@@ -1,0 +1,20 @@
+# config.yaml - Main pipeline configuration
+
+# Basic pipeline configuration
+input_file: data/OnionOrNot.csv
+processed_file: data/processed.json
+output_file: results/output.json
+text_field: text
+
+# Model configuration
+model: llama3.1
+api_base: http://localhost:11434/api
+temperature: 0.3
+
+# Classifier configuration
+classifiers:
+  - onion
+
+# Processing options
+deduplicate: true
+top_n: 10

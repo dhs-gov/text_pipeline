@@ -1,0 +1,17 @@
+# test_config.yaml - Configuration for test runs
+
+# Test resources
+test_prompts_file: tests/prompts.json
+test_sample_size: 5
+
+# Model configuration
+models: llama3.1
+api_base: http://localhost:11434/api
+
+# Test variations
+temperatures:
+  - 0.1
+  - 0.3
+
+# Used from main pipeline
+text_field: text
